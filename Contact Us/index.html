@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- link to make the icon next to the title of page -->
+    <link rel="icon" href="../images/logo-GamEEE.png">
+    <script>
+        document.onkeydown = function(e) {
+            if(event.keyCode == 123) {
+            return false;
+            }
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+            return false;
+            }
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+            return false;
+            }
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+            return false;
+            }
+            if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+            return false;
+            }
+            if(e.ctrlKey && e.keyCode == 's'.charCodeAt(0)) {
+            return false;
+            }
+            if(e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)) {
+            return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Start header -->
+    <header>
+        <!-- using table to make the shape of navbar  -->
+        <table width="100%">
+            <tr>
+                <td>
+                    <!-- The logo of the page -->
+                    <img src="../images/logo-GamEEE.png" alt="logo-png" width="20%">
+                </td>
+                <nav>
+                    <td><a href="../index.html">Home</a></td>
+                    <td><a href="../About/index.html">About</a></td>
+                    <td><a href="#">Contact Us</a></td>
+                </nav>
+            </tr>
+        </table>
+        <!-- center tag to make elements in the center -->
+    </header>
+    <!-- End header -->
+
+    <hr width="95%">
+    <!-- Start section of the form -->
+    <section>
+        <!-- using table to put the image in the left side and form in the right side -->
+        <center>
+            <h2>If You Want Anything Just Google It :)</h2>
+            <h3>Contact-Us</h3>
+            <form action="" method="get">
+                <label for="user-name">Username :</label>
+                <input type="text" id="user-name" required minlength="5" maxlength="12"
+                    placeholder="Username" name="username:">
+                <br>
+                <br>
+                <label for="email">Email :</label>
+                <input type="email" id="email" required placeholder="Email@lorem.com" name="email:">
+                <br>
+                <br>
+                <textarea name="message:" id="message" cols="30" rows="10"
+                    placeholder="Your Message"></textarea>
+                <br>
+                <br>
+                <input type="submit" value="Send">
+                <input type="reset">
+            </form>
+        </center>
+        <hr width="95%">
+        <section>
+            <center>           
+                <h1>The 7 Continents</h1>
+                <h4>&#10148; Click on the dots in the image to go to a continent section</h4>
+            </center>
+            <map name="continents_map">
+                <area shape="circle" coords="70,70,10" href="../index.html">
+                <area shape="circle" coords="133,185,10" href="../index.html">
+                <area shape="circle" coords="270,137,10" href="../index.html">
+                <area shape="circle" coords="292,44,10" href="../index.html">
+                <area shape="circle" coords="469,201,10" href="../index.html">
+                <area shape="circle" coords="374,65,10" href="../index.html">
+                <area shape="circle" coords="340,267,10" href="../index.html">
+            </map>
+            <figure style="text-align:center;">
+                <img usemap="#continents_map" src="images/world_continents.png" width="600px" />
+                <figcaption>World Map</figcaption>
+            </figure>
+        </section>
+    </section>
+    <!-- End section of the form -->
+</body>
+
+</html>

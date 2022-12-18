@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamEEE</title>
+    <!-- link to make the icon next to the title of page -->
+    <link rel="icon" href="./images/logo-GamEEE.png">
+    <script>
+        document.onkeydown = function(e) {
+            if(event.keyCode == 123) {
+            return false;
+            }
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+            return false;
+            }
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+            return false;
+            }
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+            return false;
+            }
+            if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+            return false;
+            }
+            if(e.ctrlKey && e.keyCode == 's'.charCodeAt(0)) {
+            return false;
+            }
+            if(e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)) {
+            return false;
+            }
+        }
+    </script>
+</head>
+
+<body oncontextmenu="return false">
+    <!-- Start header -->
+    <header>
+        <!-- using table to make the shape of navbar  -->
+        <table width="100%">
+            <tr>
+                <td>
+                    <!-- The logo of the page -->
+                    <img src="./images/logo-GamEEE.png" alt="logo-png" width="20%">
+                </td>
+                <nav>
+                    <td><a href="#">Home</a></td>
+                    <td><a href="./About/index.html">About</a></td>
+                    <td><a href="./Contact Us/index.html">Contact Us</a></td>
+                </nav>
+            </tr>
+        </table>
+        <!-- center tag to make elements in the center -->
+        <center>
+            <!-- using datalist to make suggestions to user in search -->
+            <div>
+                <input type="text" list="data" placeholder="&#128269; Search" dir="ltr">
+                <datalist id="data">
+                    <option value="Valorant"></option>
+                    <option value="Detroit Become Human"></option>
+                    <option value="Among Us"></option>
+                    <option value="Pubg"></option>
+                    <option value="Free Fire"></option>
+                </datalist>
+            </div>
+        </center>
+    </header>
+    <!-- End header -->
+
+    <hr width="95%">
+
+    <main>
+        <!-- Start Section Of Valorant -->
+        <section>
+            <div>
+                <center>
+                    <h2>Valorant</h2>
+                    <img src="./images/valorant-photo.jpg" alt="Valorant image" width="50%">
+                </center>
+                <!-- em to make the text italic ,mark to make a marker on the text and b to make text bold -->
+                <p><em><b>Valorant</b></em> is a <mark> free-to-play first-person tactical hero shooter </mark> developed
+                    and published by Riot Games,
+                    for Windows.Teased under the codename Project A in October 2019, the game began a closed beta period
+                    with
+                    limited access on April 7, 2020, followed by a release on June 2, 2020. The development of the game
+                    started
+                    in 2014. Valorant takes inspiration from the Counter-Strike series of tactical shooters, borrowing
+                    several
+                    mechanics such as the buy menu, spray patterns, and inaccuracy while moving.</p>
+            </div>
+        </section>
+        <!-- End Section Of Valorant -->
+        <hr width="95%">
+        <!-- Start Section Of Among Us -->
+        <section>
+            <div>
+                <!-- using table to put the image in the left side and text and audio in the right side -->
+                <table width="100%">
+                    <tr>
+                        <!-- the image of the character -->
+                        <td rowspan="2"><img src="./images/Among-Us-Photo.png" alt="Character From Among Us Game"
+                                width="125%"></td>
+                        <td>
+                            <h2>Among Us</h2>
+                            <q>Online multiplayer social deduction game</q>
+                            <p>The game was inspired by the party game Mafia and the science fiction horror film The
+                                Thing. The game allows for cross-platform play, first released on<abbr
+                                    title="ios is a mobile operating system created and developed by Apple Inc."> iOS</abbr>
+                                and<abbr title="Android is a mobile operating system based on a modified
+    version of the Linux kernel and other open-source software"> Android </abbr> devices in June 2018 and on Windows later
+                                that year in
+                                November. The game was then ported to the Nintendo Switch in December 2020 and on the
+                                PlayStation 4
+                                , PlayStation 5, Xbox One and Xbox Series X/S in December 2021.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <audio controls="">
+                                <source src="./audios/audio1.m4a" type="audio/m4a">
+                                <source src="./audios/audio1.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <!-- End Section Of Among Us -->
+
+        <hr width="95%">
+
+        <!-- Stat Section Of Pubg  -->
+        <section>
+            <div>
+                <!-- using table to put the image in the right side and text in the left side -->
+                <table width="100%">
+                    <tr>
+                        <td>
+                            <h2>PUBG: Battlegrounds</h2>
+                            <p contenteditable>PUBG is a<abbr title="A battle royale game is an online multiplayer video
+    game genre that blends last-man-standing gameplay with the survival,"> battle royale game</abbr> developed by PUBG
+                                Studios and published by<abbr title=" is a South Korean video game holding company">
+                                    Krafton</abbr>. The game,
+                                which was inspired by the Japanese film Battle Royale (2000), is based on previous mods
+                                created by Brendan "PlayerUnknown" Greene for other games, and expanded into a standalone
+                                game under Greene's creative direction. It is the first game in the PUBG Universe series.
+                            </p>
+                            <br>
+                            <center>
+                                <p>381,005,231 Monthly Active Players</p>
+                                <!-- progress to make the blue line  -->
+                                <progress value="80" max="100"></progress>
+                            </center>
+                        </td>
+                        <td rowspan="2">
+                            <video width="653" height="380" controls="" poster="./images/cover.png">
+                                <source src="./Videos/Pubg Video.mp4" type="video/mp4">
+                            </video>
+                        </td>
+                    </tr>
+                </table>
+        </section>
+        <!-- End Section Of Pubg  -->
+    </main>
+    <br>
+    <br>
+    <!-- Start Footer -->
+    <footer>
+        <center>
+            <h4>All right reserved <a href="https://ieee-community.vercel.app/" target="_blank">IEEE-OSB</a> &copy; 2022 </h4>
+            <a href="#" dir="rtl">
+                <h2><b> &uarr;</b></h2>
+            </a>
+        </center>
+    </footer>
+    <!-- End Footer -->
+</body>
+
+</html>
